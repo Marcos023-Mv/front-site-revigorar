@@ -10,6 +10,7 @@ const LINKS = [
   { label: 'Contatos', to: '/contatos' },
 ]
 
+<<<<<<< HEAD
 const SOCIAL_LINKS = [
   { label: 'Instagram', url: import.meta.env.VITE_SOCIAL_INSTAGRAM, icon: <Instagram size={16} /> },
   { label: 'LinkedIn', url: import.meta.env.VITE_SOCIAL_LINKEDIN, icon: <Linkedin size={16} /> },
@@ -21,6 +22,8 @@ const LEGAL_LINKS = [
   { label: 'Termos de Uso', url: import.meta.env.VITE_TERMS_URL },
 ].filter((l) => l.url)
 
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 export default function Footer() {
   return (
     <footer className="footer">
@@ -47,6 +50,7 @@ export default function Footer() {
           </ul>
         </nav>
 
+<<<<<<< HEAD
         {SOCIAL_LINKS.length > 0 && (
           <div className="footer__social">
             {SOCIAL_LINKS.map((s) => (
@@ -56,11 +60,19 @@ export default function Footer() {
             ))}
           </div>
         )}
+=======
+        <div className="footer__social">
+          <a href="#" aria-label="Instagram"><Instagram size={16} /></a>
+          <a href="#" aria-label="LinkedIn"><Linkedin size={16} /></a>
+          <a href="#" aria-label="Facebook"><Facebook size={16} /></a>
+        </div>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
       </div>
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <span>© 2026 Revigorar. Todos os direitos reservados.</span>
+<<<<<<< HEAD
           {LEGAL_LINKS.length > 0 && (
             <div className="footer__legal">
               {LEGAL_LINKS.map((l) => (
@@ -70,6 +82,12 @@ export default function Footer() {
               ))}
             </div>
           )}
+=======
+          <div className="footer__legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         </div>
       </div>
     </footer>

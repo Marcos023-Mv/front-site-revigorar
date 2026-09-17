@@ -3,7 +3,11 @@ import PageBanner from '../../components/PageBanner/PageBanner.jsx'
 import Button from '../../components/Button/Button.jsx'
 import './About.css'
 
+<<<<<<< HEAD
 const BANNER_IMAGE = 'https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=900&q=80'
+=======
+const BANNER_IMAGE = 'https://images.unsplash.com/photo-1758691463620-188ca7c1a04f?auto=format&fit=crop&w=900&q=80'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 const WHY_IMAGE = 'https://images.unsplash.com/photo-1666886573215-b59d8ad9970c?auto=format&fit=crop&w=1400&q=80'
 
 export default function About() {
@@ -13,6 +17,10 @@ export default function About() {
         eyebrow="SOBRE O REVIGORAR"
         title="Mais que um sistema, é um parceiro no cuidado."
         subtitle="O REVIGORAR nasceu da união entre tecnologia, saúde e empatia. Somos uma equipe apaixonada por inovações e comprometida com a rotina de profissionais da saúde, oferecendo uma solução completa para facilitar o dia a dia das equipes e melhorar a qualidade do atendimento."
+<<<<<<< HEAD
+=======
+        quote="Tecnologia a serviço da vida."
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         image={BANNER_IMAGE}
       />
       <div className="container">

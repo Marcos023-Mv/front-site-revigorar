@@ -3,12 +3,19 @@ import {
   Building2, GraduationCap, HeartPulse, Users2, ShieldCheck, MessageCircle,
 } from 'lucide-react'
 import Button from '../../components/Button/Button.jsx'
+<<<<<<< HEAD
 import { Card } from '../../components/Card/Card.jsx'
 import useReveal from '../../hooks/useReveal.js'
 import './Home.css'
 
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1666887360726-f55472d96c34?auto=format&fit=crop&w=1200&q=80'
 const ABOUT_SYSTEM_IMAGE = 'https://images.unsplash.com/photo-1666886573421-d19e546cfc4e?auto=format&fit=crop&w=1200&q=80'
+=======
+import { StatBox } from '../../components/Card/Card.jsx'
+import './Home.css'
+
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1666887360726-f55472d96c34?auto=format&fit=crop&w=1200&q=80'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
 const QUICK_FEATURES = [
   { icon: <ClipboardList size={18} />, label: 'Prontuário eletrônico especializado' },
@@ -18,6 +25,7 @@ const QUICK_FEATURES = [
 ]
 
 const BENEFITS = [
+<<<<<<< HEAD
   {
     icon: <ShieldCheck size={24} />,
     title: 'Mais organização',
@@ -38,6 +46,12 @@ const BENEFITS = [
     title: 'Atendimento humanizado',
     description: 'Menos tempo com burocracia, mais tempo com o paciente.',
   },
+=======
+  { icon: <ShieldCheck size={24} />, label: 'Mais organização' },
+  { icon: <HeartPulse size={24} />, label: 'Maior segurança' },
+  { icon: <MessageCircle size={24} />, label: 'Melhor comunicação' },
+  { icon: <Users2 size={24} />, label: 'Atendimento humanizado' },
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 ]
 
 const DEVICES = [
@@ -55,12 +69,15 @@ const AUDIENCE = [
 ]
 
 export default function Home() {
+<<<<<<< HEAD
   const aboutSystemRef = useReveal()
   const benefitsRef = useReveal()
   const devicesRef = useReveal()
   const audienceRef = useReveal()
   const closingRef = useReveal()
 
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   return (
     <>
       {/* HERO */}
@@ -86,9 +103,14 @@ export default function Home() {
             </div>
           </div>
           <div className="hero__media">
+<<<<<<< HEAD
             <div className="hero__frame">
               <img className="hero__photo" src={HERO_IMAGE} alt="Profissional de saúde utilizando tablet" />
             </div>
+=======
+            <img className="hero__photo" src={HERO_IMAGE} alt="Profissional de saúde utilizando tablet" />
+            <p className="hero__quote">Mais cuidado, mais vida.</p>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
           </div>
         </div>
 
@@ -105,7 +127,11 @@ export default function Home() {
       </section>
 
       {/* O QUE É */}
+<<<<<<< HEAD
       <section className="section about-system reveal" ref={aboutSystemRef}>
+=======
+      <section className="section about-system">
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         <div className="container about-system__inner">
           <div className="about-system__text">
             <h2>O que é o REVIGORAR?</h2>
@@ -119,6 +145,7 @@ export default function Home() {
             </Button>
           </div>
           <div className="about-system__media">
+<<<<<<< HEAD
             <div className="about-system__frame">
               <img
                 className="about-system__photo"
@@ -130,16 +157,26 @@ export default function Home() {
               <span className="pill__icon"><ShieldCheck size={18} /></span>
               <span>Dados centralizados e seguros</span>
             </div>
+=======
+            <div className="device-mock device-mock--desktop" />
+            <div className="device-mock device-mock--tablet" />
+            <div className="device-mock device-mock--phone" />
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
           </div>
         </div>
       </section>
 
       {/* PRINCIPAIS BENEFÍCIOS */}
+<<<<<<< HEAD
       <section className="section benefits reveal" ref={benefitsRef}>
+=======
+      <section className="section benefits">
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         <div className="container">
           <h2 className="section-title">Principais benefícios</h2>
           <div className="benefits__grid">
             {BENEFITS.map((b) => (
+<<<<<<< HEAD
               <Card
                 key={b.title}
                 icon={b.icon}
@@ -147,13 +184,20 @@ export default function Home() {
                 description={b.description}
                 className="benefits__card"
               />
+=======
+              <StatBox key={b.label} icon={b.icon} label={b.label} />
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
             ))}
           </div>
         </div>
       </section>
 
       {/* DISPOSITIVOS */}
+<<<<<<< HEAD
       <section className="section devices reveal" ref={devicesRef}>
+=======
+      <section className="section devices">
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         <div className="container devices__inner">
           <h2>Funciona em todos os dispositivos</h2>
           <p>Acesse de onde estiver, quando precisar.</p>
@@ -169,7 +213,11 @@ export default function Home() {
       </section>
 
       {/* PARA QUEM É */}
+<<<<<<< HEAD
       <section className="section audience reveal" ref={audienceRef}>
+=======
+      <section className="section audience">
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         <div className="container">
           <h2 className="section-title">Para quem é o REVIGORAR?</h2>
           <div className="audience__grid">
@@ -184,6 +232,7 @@ export default function Home() {
       </section>
 
       {/* CTA FINAL */}
+<<<<<<< HEAD
       <section className="section closing reveal" ref={closingRef}>
         <div className="container">
           <div className="cta-card cta-card--full">
@@ -197,6 +246,15 @@ export default function Home() {
                 Ver planos
               </Button>
             </div>
+=======
+      <section className="section closing">
+        <div className="container">
+          <div className="cta-card cta-card--full">
+            <h3>Pronta para transformar o cuidado em saúde?</h3>
+            <Button as="link" to="/contatos" variant="secondary">
+              Solicite uma demonstração
+            </Button>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
           </div>
         </div>
       </section>

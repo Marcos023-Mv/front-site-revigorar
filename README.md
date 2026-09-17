@@ -51,6 +51,7 @@ npm -v
    npm install
    ```
 
+<<<<<<< HEAD
 3. Configure as variáveis de ambiente (dados de contato, redes sociais e
    links legais). O projeto já vem com um arquivo `.env` pronto para uso;
    se precisar recriá-lo, copie o modelo:
@@ -63,12 +64,19 @@ npm -v
    reais da instituição.
 
 4. Inicie o servidor de desenvolvimento:
+=======
+3. Inicie o servidor de desenvolvimento:
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
    ```bash
    npm run dev
    ```
 
+<<<<<<< HEAD
 5. Abra o navegador em **http://localhost:5173** — o site vai carregar com
+=======
+4. Abra o navegador em **http://localhost:5173** — o site vai carregar com
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
    hot-reload (qualquer alteração no código atualiza a página automaticamente).
 
 ### Gerar a versão de produção
@@ -90,7 +98,11 @@ src/
 │   ├── Header/        → cabeçalho fixo com navegação e busca
 │   ├── Footer/         → rodapé com links e redes sociais
 │   ├── Button/         → botão reutilizável (variantes primary/secondary/outline/ghost)
+<<<<<<< HEAD
 │   ├── Card/            → card de recurso (ícone + título + descrição)
+=======
+│   ├── Card/            → card de recurso e "StatBox" (ícone + rótulo)
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 │   └── PageBanner/    → banner de topo usado nas páginas internas
 ├── layouts/
 │   └── MainLayout.jsx  → aplica Header/Footer em todas as páginas

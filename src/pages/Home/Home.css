@@ -4,6 +4,7 @@
   font-size: var(--fs-xl);
 }
 
+<<<<<<< HEAD
 /* SCROLL REVEAL */
 .reveal {
   opacity: 0;
@@ -16,6 +17,8 @@
   transform: translateY(0);
 }
 
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 /* HERO */
 .hero {
   background: var(--color-bg-mint);
@@ -58,15 +61,21 @@
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .hero__frame {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+=======
+.hero__media {
+  position: relative;
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 .hero__photo {
   width: 100%;
   aspect-ratio: 4 / 3;
+<<<<<<< HEAD
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
@@ -74,6 +83,23 @@
 
 .hero__frame:hover .hero__photo {
   transform: scale(1.04);
+=======
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+}
+
+.hero__quote {
+  position: absolute;
+  top: -8px;
+  right: 6px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--color-primary-dark);
+  max-width: 140px;
+  text-align: right;
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 .hero__pills {
@@ -95,6 +121,7 @@
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 .hero__pills .pill {
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
@@ -105,6 +132,8 @@
   border-color: var(--color-primary-light);
 }
 
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 .pill__icon {
   display: flex;
   align-items: center;
@@ -137,6 +166,7 @@
 
 .about-system__media {
   position: relative;
+<<<<<<< HEAD
 }
 
 .about-system__frame {
@@ -162,6 +192,43 @@
   left: var(--space-5);
   bottom: calc(-1 * var(--space-5));
   box-shadow: var(--shadow-md);
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 260px;
+}
+
+.device-mock {
+  position: absolute;
+  background: var(--color-primary-dark);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+}
+
+.device-mock--desktop {
+  width: 78%;
+  height: 200px;
+  background: linear-gradient(160deg, var(--color-primary-dark), var(--color-primary));
+}
+
+.device-mock--tablet {
+  width: 32%;
+  height: 160px;
+  right: 6%;
+  bottom: -18px;
+  background: var(--color-white);
+  border: 6px solid var(--color-primary-dark);
+}
+
+.device-mock--phone {
+  width: 16%;
+  height: 130px;
+  left: 4%;
+  bottom: -30px;
+  background: var(--color-white);
+  border: 5px solid var(--color-primary-dark);
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 /* BENEFÍCIOS */
@@ -175,6 +242,7 @@
   gap: var(--space-5);
 }
 
+<<<<<<< HEAD
 .benefits__card {
   text-align: center;
 }
@@ -197,6 +265,11 @@
   background: var(--color-bg-mint);
   border-radius: var(--radius-lg);
   padding: var(--space-7) var(--space-6);
+=======
+/* DISPOSITIVOS */
+.devices__inner {
+  text-align: center;
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 .devices__inner h2 {
@@ -220,11 +293,14 @@
   align-items: center;
   gap: var(--space-2);
   color: var(--color-primary);
+<<<<<<< HEAD
   transition: transform var(--transition);
 }
 
 .devices__item:hover {
   transform: translateY(-4px);
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 .devices__item span {
@@ -257,11 +333,14 @@
   color: var(--color-white);
   font-size: var(--fs-sm);
   font-weight: 500;
+<<<<<<< HEAD
   transition: transform var(--transition);
 }
 
 .audience__item:hover {
   transform: translateY(-4px);
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 .audience__icon {
@@ -273,11 +352,14 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   color: var(--color-white);
+<<<<<<< HEAD
   transition: background var(--transition);
 }
 
 .audience__item:hover .audience__icon {
   background: rgba(255, 255, 255, 0.2);
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 /* CTA FINAL */
@@ -296,6 +378,7 @@
   font-size: var(--fs-lg);
 }
 
+<<<<<<< HEAD
 .cta-card__text {
   color: rgba(255, 255, 255, 0.82);
   max-width: 480px;
@@ -309,6 +392,8 @@
   justify-content: center;
 }
 
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 .cta-card--full {
   align-items: center;
   text-align: center;
@@ -335,8 +420,15 @@
     gap: var(--space-6);
   }
 
+<<<<<<< HEAD
   .about-system__media {
     margin-bottom: var(--space-6);
+=======
+  .hero__quote {
+    position: static;
+    margin-top: var(--space-3);
+    text-align: left;
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   }
 }
 
@@ -353,6 +445,7 @@
   .hero__content h1 {
     font-size: var(--fs-2xl);
   }
+<<<<<<< HEAD
 
   .about-system__badge {
     left: var(--space-3);
@@ -360,4 +453,6 @@
     bottom: calc(-1 * var(--space-4));
     font-size: 12px;
   }
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }

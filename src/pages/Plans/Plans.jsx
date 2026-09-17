@@ -4,7 +4,11 @@ import PageBanner from '../../components/PageBanner/PageBanner.jsx'
 import Button from '../../components/Button/Button.jsx'
 import './Plans.css'
 
+<<<<<<< HEAD
 const BANNER_IMAGE = 'https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=900&q=80'
+=======
+const BANNER_IMAGE = 'https://images.unsplash.com/photo-1666886573215-b59d8ad9970c?auto=format&fit=crop&w=900&q=80'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
 const PLANS = [
   {
@@ -67,6 +71,10 @@ export default function Plans() {
         eyebrow="PLANOS"
         title="Planos e valores"
         subtitle="Escolha o plano ideal para sua instituição e tenha acesso a todas as funcionalidades do sistema."
+<<<<<<< HEAD
+=======
+        quote="Investimento em cuidado."
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         image={BANNER_IMAGE}
       />
 
@@ -85,12 +93,16 @@ export default function Plans() {
                   <li key={item}><Check size={15} /> {item}</li>
                 ))}
               </ul>
+<<<<<<< HEAD
               <Button
                 as="link"
                 to={`/contatos?assunto=${encodeURIComponent('Dúvidas sobre planos')}&plano=${encodeURIComponent(plan.name)}`}
                 variant={plan.highlight ? 'primary' : 'secondary'}
                 className="pricing-card__cta"
               >
+=======
+              <Button variant={plan.highlight ? 'primary' : 'secondary'} className="pricing-card__cta">
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
                 Contratar
               </Button>
             </div>

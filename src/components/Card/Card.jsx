@@ -21,4 +21,16 @@ export function Card({ icon, title, items, description, className = '' }) {
   )
 }
 
+<<<<<<< HEAD
+=======
+export function StatBox({ icon, label }) {
+  return (
+    <div className="statbox">
+      <div className="statbox__icon">{icon}</div>
+      <span>{label}</span>
+    </div>
+  )
+}
+
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 export default Card

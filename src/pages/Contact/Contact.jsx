@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 import { useEffect, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+=======
+import { useState } from 'react'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 import { Phone, Mail, MapPin, CalendarCheck } from 'lucide-react'
 import PageBanner from '../../components/PageBanner/PageBanner.jsx'
 import Button from '../../components/Button/Button.jsx'
 import './Contact.css'
 
+<<<<<<< HEAD
 const BANNER_IMAGE = 'https://images.unsplash.com/photo-1714079761488-e0c9b9ac4138?auto=format&fit=crop&w=900&q=80'
 
 const CONTACT_PHONE_DISPLAY = import.meta.env.VITE_CONTACT_PHONE_DISPLAY
@@ -12,25 +17,40 @@ const CONTACT_WHATSAPP_NUMBER = import.meta.env.VITE_CONTACT_WHATSAPP_NUMBER
 const CONTACT_HOURS = import.meta.env.VITE_CONTACT_HOURS
 const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL
 const CONTACT_ADDRESS = import.meta.env.VITE_CONTACT_ADDRESS
+=======
+const BANNER_IMAGE = 'https://images.unsplash.com/photo-1758691463620-188ca7c1a04f?auto=format&fit=crop&w=900&q=80'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
 const OTHER_CONTACTS = [
   {
     icon: <Phone size={18} />,
     title: 'WhatsApp',
+<<<<<<< HEAD
     lines: [CONTACT_PHONE_DISPLAY, CONTACT_HOURS],
     href: `https://wa.me/${CONTACT_WHATSAPP_NUMBER}`,
+=======
+    lines: ['(11) 4000-0802', 'Segunda a sexta, das 8h às 18h'],
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   },
   {
     icon: <Mail size={18} />,
     title: 'E-mail',
+<<<<<<< HEAD
     lines: [CONTACT_EMAIL, 'Respondemos em até 24h'],
     href: `mailto:${CONTACT_EMAIL}`,
+=======
+    lines: ['contato@revigorar.com', 'Respondemos em até 24h'],
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   },
   {
     icon: <MapPin size={18} />,
     title: 'Localização',
+<<<<<<< HEAD
     lines: [CONTACT_ADDRESS, '(Atendimento online e presencial)'],
     href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONTACT_ADDRESS)}`,
+=======
+    lines: ['Rua Exemplo, 123 — São Paulo/SP', '(Atendimento online e presencial)'],
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   },
 ]
 
@@ -52,6 +72,7 @@ const INITIAL_FORM = {
 export default function Contact() {
   const [form, setForm] = useState(INITIAL_FORM)
   const [sent, setSent] = useState(false)
+<<<<<<< HEAD
   const [searchParams] = useSearchParams()
   const formRef = useRef(null)
 
@@ -65,6 +86,8 @@ export default function Contact() {
       mensagem: plano ? `Tenho interesse no plano ${plano}.` : f.mensagem,
     }))
   }, [searchParams])
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
   const handleChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
@@ -76,23 +99,34 @@ export default function Contact() {
     setForm(INITIAL_FORM)
   }
 
+<<<<<<< HEAD
   const handleScheduleClick = () => {
     setForm((f) => ({ ...f, assunto: 'Solicitar demonstração' }))
     formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   return (
     <>
       <PageBanner
         eyebrow="CONTATOS"
         title="Fale com o REVIGORAR"
         subtitle="Tire suas dúvidas, solicite uma demonstração ou peça uma proposta personalizada."
+<<<<<<< HEAD
+=======
+        quote="Estamos prontos para te atender!"
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         image={BANNER_IMAGE}
       />
 
       <section className="section contact-main">
         <div className="container contact-main__grid">
+<<<<<<< HEAD
           <form className="contact-form" onSubmit={handleSubmit} ref={formRef}>
+=======
+          <form className="contact-form" onSubmit={handleSubmit}>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
             <h2>Envie sua mensagem</h2>
 
             <div className="field">
@@ -153,13 +187,21 @@ export default function Contact() {
             <div className="contact-side__card">
               <h3>Outros meios de contato</h3>
               {OTHER_CONTACTS.map((c) => (
+<<<<<<< HEAD
                 <a className="contact-item" key={c.title} href={c.href} target="_blank" rel="noreferrer">
+=======
+                <div className="contact-item" key={c.title}>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
                   <span className="contact-item__icon">{c.icon}</span>
                   <div>
                     <strong>{c.title}</strong>
                     {c.lines.map((line) => <span key={line}>{line}</span>)}
                   </div>
+<<<<<<< HEAD
                 </a>
+=======
+                </div>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
               ))}
             </div>
 
@@ -167,9 +209,13 @@ export default function Contact() {
               <CalendarCheck size={22} />
               <h3>Solicite uma demonstração</h3>
               <p>Veja na prática como o REVIGORAR pode facilitar o seu dia a dia.</p>
+<<<<<<< HEAD
               <Button variant="secondary" onClick={handleScheduleClick}>
                 Agendar demonstração
               </Button>
+=======
+              <Button variant="secondary">Agendar demonstração</Button>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
             </div>
           </aside>
         </div>

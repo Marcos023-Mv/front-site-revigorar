@@ -87,6 +87,7 @@
 .contact-item {
   display: flex;
   gap: var(--space-3);
+<<<<<<< HEAD
   margin: 0 calc(-1 * var(--space-2)) var(--space-4);
   padding: var(--space-2);
   color: inherit;
@@ -96,6 +97,9 @@
 
 .contact-item:hover {
   background: var(--color-bg-mint);
+=======
+  margin-bottom: var(--space-4);
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 }
 
 .contact-item:last-child {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   Stethoscope, TrendingUp, FileText, Brain, Radio, Settings, ShieldCheck,
 } from 'lucide-react'
@@ -6,6 +7,19 @@ import Card from '../../components/Card/Card.jsx'
 import './Features.css'
 
 const BANNER_IMAGE = 'https://images.unsplash.com/photo-1631217873436-b0fa88e71f0a?auto=format&fit=crop&w=900&q=80'
+=======
+import { useState } from 'react'
+import {
+  Stethoscope, TrendingUp, FileText, Brain, Radio, Settings, ShieldCheck,
+  ChevronLeft, ChevronRight,
+} from 'lucide-react'
+import PageBanner from '../../components/PageBanner/PageBanner.jsx'
+import Card from '../../components/Card/Card.jsx'
+import Button from '../../components/Button/Button.jsx'
+import './Features.css'
+
+const BANNER_IMAGE = 'https://images.unsplash.com/photo-1666887360726-f55472d96c34?auto=format&fit=crop&w=900&q=80'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
 const FEATURE_GROUPS = [
   {
@@ -45,13 +59,32 @@ const FEATURE_GROUPS = [
   },
 ]
 
+<<<<<<< HEAD
 export default function Features() {
+=======
+const SLIDES = [
+  { title: 'Dashboard', desc: 'Visão geral da sua rotina' },
+  { title: 'Prontuário de paciente', desc: 'Todas as informações em um só lugar' },
+  { title: 'Avaliação de feridas', desc: 'Registro e acompanhamento' },
+]
+
+export default function Features() {
+  const [slide, setSlide] = useState(0)
+
+  const prev = () => setSlide((s) => (s === 0 ? SLIDES.length - 1 : s - 1))
+  const next = () => setSlide((s) => (s === SLIDES.length - 1 ? 0 : s + 1))
+
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
   return (
     <>
       <PageBanner
         eyebrow="FUNCIONALIDADES"
         title="Tudo o que você precisa em um só lugar."
         subtitle="O REVIGORAR reúne as principais ferramentas para um cuidado mais completo, seguro e humanizado."
+<<<<<<< HEAD
+=======
+        quote="Mais controle, mais resultado."
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         image={BANNER_IMAGE}
       />
 
@@ -60,6 +93,56 @@ export default function Features() {
           {FEATURE_GROUPS.map((group) => (
             <Card key={group.title} icon={group.icon} title={group.title} items={group.items} />
           ))}
+<<<<<<< HEAD
+=======
+
+          <div className="features-cta">
+            <h3>Conheça cada detalhe do sistema</h3>
+            <p>Explore todas as funcionalidades e veja como o REVIGORAR pode facilitar o seu dia a dia.</p>
+            <Button as="link" to="/contatos" variant="secondary">
+              Ver demonstração
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="section carousel-section">
+        <div className="container">
+          <h2 className="section-title" style={{ textAlign: 'left' }}>Veja o sistema em ação</h2>
+          <div className="carousel">
+            <button className="carousel__arrow" onClick={prev} aria-label="Anterior">
+              <ChevronLeft size={18} />
+            </button>
+
+            <div className="carousel__track">
+              {SLIDES.map((s, i) => (
+                <div
+                  key={s.title}
+                  className={`carousel__slide ${i === slide ? 'is-active' : ''}`}
+                >
+                  <div className="carousel__preview" />
+                  <strong>{s.title}</strong>
+                  <span>{s.desc}</span>
+                </div>
+              ))}
+            </div>
+
+            <button className="carousel__arrow" onClick={next} aria-label="Próximo">
+              <ChevronRight size={18} />
+            </button>
+          </div>
+
+          <div className="carousel__dots">
+            {SLIDES.map((s, i) => (
+              <button
+                key={s.title}
+                className={`carousel__dot ${i === slide ? 'is-active' : ''}`}
+                onClick={() => setSlide(i)}
+                aria-label={`Ir para slide ${i + 1}`}
+              />
+            ))}
+          </div>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
         </div>
       </section>
     </>

@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { useEffect, useRef, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
+=======
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 import { Search, Menu, X, Leaf } from 'lucide-react'
 import Button from '../Button/Button.jsx'
 import './Header.css'
@@ -14,6 +19,7 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+<<<<<<< HEAD
   const [searchOpen, setSearchOpen] = useState(false)
   const [query, setQuery] = useState('')
   const searchRef = useRef(null)
@@ -44,6 +50,8 @@ export default function Header() {
     e.preventDefault()
     if (results[0]) goTo(results[0].to)
   }
+=======
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
 
   return (
     <header className="header">
@@ -73,6 +81,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
+<<<<<<< HEAD
           <div className="header__nav-cta">
             <Button as="link" to="/contatos" variant="primary" size="sm" onClick={() => setOpen(false)}>
               Acessar o sistema
@@ -118,6 +127,14 @@ export default function Header() {
             )}
           </div>
 
+=======
+        </nav>
+
+        <div className="header__actions">
+          <button className="header__icon-btn" aria-label="Buscar">
+            <Search size={18} />
+          </button>
+>>>>>>> d7417fa6b98d02627a06cce7d2d5852a0ddfa07c
           <Button as="link" to="/contatos" variant="primary" size="sm">
             Acessar o sistema
           </Button>
